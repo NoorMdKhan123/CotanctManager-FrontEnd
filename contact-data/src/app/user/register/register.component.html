@@ -1,0 +1,135 @@
+<div  class="body-part">
+  <mat-card class="container" fxLayout.xs="column" fxLayout.sm="column" fxFlex.xs="95"  fxFlex.sm="60">
+
+    <div fxLayout="row" fxLaoutGap ="50%" fxLayoutAlign="center center" fxLayout.xs="row" fxLayout.sm="row" fxFlex.xs ="95"
+     fxFlex.xs="60" >
+     <div class="signup" routerLink="/login">
+      Login
+    </div>
+       <div class="login" >
+         SignUp
+        </div>
+
+    </div>
+
+    <form [formGroup]="registrationForm" >
+        <div class="form-fields">
+
+            <div>
+                <div>
+                    <mat-label style="font-size: medium; font-weight: 500;">Full Name</mat-label>
+                </div>
+                <div style="font-size: 8px;">
+                    <p>
+                        <mat-form-field appearance="outline">
+                            <input matInput type="text" formControlName="name" placeholder=""  style="font-size: 14px;">
+                            <mat-error>Enter full name</mat-error>
+                        </mat-form-field>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <mat-label style="font-size: medium; font-weight: 500;">Email Id</mat-label>
+                </div>
+                <div style="font-size: 8px;">                    <p>
+                        <mat-form-field appearance="outline">
+                            <input matInput type="text" formControlName="email" placeholder=" " style="font-size: 14px;">
+                            <mat-error>Choose a Gmail address</mat-error>
+                        </mat-form-field>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <mat-label style="font-size: medium; font-weight: 500;">Password</mat-label>
+                </div>
+                <div style="font-size: 8px;">                    <p>
+                        <mat-form-field appearance="outline">
+                            <input matInput type="password" formControlName="password" placeholder=""   style="font-size: 14px;">
+                            <mat-error>Enter a password</mat-error>
+                        </mat-form-field>
+                    </p>
+                </div>
+            </div>
+            <div>
+              <div>
+                  <mat-label style="font-size: medium; font-weight: 500;">Date of Birth</mat-label>
+              </div>
+              <div style="font-size: 8px;">                  <p>
+                      <mat-form-field appearance="outline">
+                          <input  matInput type="text" formControlName="dateofbirth" placeholder=""   style="font-size: 14px;">
+                          <mat-error>Enter Date of Bitrh</mat-error>
+                      </mat-form-field>
+                  </p>
+              </div>
+          </div>
+          <div>
+            <div>
+                <mat-label style="font-size: medium; font-weight: 500;">Location</mat-label>
+            </div>
+            <div style="font-size: 8px;">                <p>
+                    <mat-form-field appearance="outline">
+                        <input  matInput type="text" formControlName="location" placeholder=""   style="font-size: 14px;">
+                        <mat-error>Enter Location </mat-error>
+                    </mat-form-field>
+                </p>
+            </div>
+        </div>
+        <div>
+          <div>
+              <mat-label style="font-size: medium; font-weight: 500;">Department</mat-label>
+          </div>
+          <div style="font-size: 8px;">              <p>
+                  <mat-form-field appearance="outline">
+                      <input  matInput type="text" formControlName="department" placeholder=""   style="font-size: 14px;">
+                      <mat-error>Enter Department</mat-error>
+                  </mat-form-field>
+              </p>
+          </div>
+      </div>
+          <div>
+            <div>
+                <mat-label style="font-size: medium; font-weight: 500;">Mobile Number</mat-label>
+            </div>
+            <div style="font-size: 8px;">                <p>
+                    <mat-form-field appearance="outline">
+                        <input  matInput type="text" formControlName="phone" placeholder=""   style="font-size: 14px;">
+                        <mat-error>Enter Gender</mat-error>
+                    </mat-form-field>
+                </p>
+            </div>
+        </div>
+        <div>
+          <div>
+              <mat-label style="font-size: medium; font-weight: 500;">Gender</mat-label>
+          </div>
+          <div style="font-size: 8px;">              <p>
+                  <mat-form-field appearance="outline">
+                      <input  matInput type="text" formControlName="gender" placeholder=""  style="font-size: 14px;">
+                      <mat-error>Enter Gender</mat-error>
+                  </mat-form-field>
+              </p>
+          </div>
+          <div>
+            <mat-label style="font-size: medium; font-weight: 500;">Age</mat-label>
+        </div>
+        <div style="font-size: 8px;">            <p>
+                <mat-form-field appearance="outline">
+                    <input  matInput type="text" formControlName="age" placeholder=""  style="font-size: 14px;">
+                    <mat-error>Enter Age</mat-error>
+                </mat-form-field>
+            </p>
+        </div>
+      </div>
+
+        </div>
+        <div style="margin-bottom: 20px; margin-top:20px;height:30%;"  fxLayoutAlign="center center">
+            <button  mat-flat-button (click)="onRegister()"
+                style="width: 80%;font-size:15px; margin-top: 10px; height:30%;background: brown; color: white;">Signup</button>
+        </div>
+    </form>
+  </mat-card>
+
+
+</div>

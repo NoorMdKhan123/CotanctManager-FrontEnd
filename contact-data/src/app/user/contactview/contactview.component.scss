@@ -1,0 +1,47 @@
+.body-part
+{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 700px;
+    background:rgb(133, 208, 238);
+    display: flex;
+    align-items: row;
+
+}
+.imageContainer{
+  width:100%;
+  height: 100%;
+  margin-top:10%;
+  margin-left: 10%;
+  float: left;
+
+
+
+
+
+  @media screen and (max-width: 1000px) and (min-width: 300px) {
+      border: 1px solid darkgrey;
+      width: 100%;
+      height: 100%;
+}
+}
+.contactName
+{
+  margin-top:40%;
+
+
+  margin-left:150%;
+  height: 100%;
+  width: 200%;
+
+}
+.contactView
+{
+  text-shadow: 2px 2px rgb(156, 175, 184);
+  font-weight: 1000;
+  font-size: xx-large;
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(95, 90, 90);
+  font-style: italic;
+}

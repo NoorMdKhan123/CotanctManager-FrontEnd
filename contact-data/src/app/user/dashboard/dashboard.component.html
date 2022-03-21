@@ -1,0 +1,31 @@
+<div class ="ht">
+
+  <mat-toolbar class="toolbar" fxLayoutAlign="center center" fxLayout.xs="row wrap">
+      <mat-toolbar-row fxLayout.xs="row" fxFlex.xs="70">
+          <div class="bookImage" fxLayout="row" fxLayoutAlign="start center"   fxLayout.xs="row" fxFlex.xs="30">
+
+              <div>
+                  <span class="name">Contact Directory</span>
+              </div>
+              <div class="Image">
+                <img src="../../../assets/phn img.jfif" class="Image">
+              </div>
+          </div>
+          <mat-card class="searchbar" fxLayout="row" fxLayoutAlign="start center" fxLayout.xs="row" fxFlex.xs="40">
+              <mat-icon class="search_bar"></mat-icon>
+              <input type="text" name="search" placeholder="Search ..." class="search" fxHide.xs fxHide.sm>
+          </mat-card>
+          <div class="profileImage" fxLayout="column" fxLayoutAlign="center center" fxLayout.xs="row" fxFlex.xs="50">
+              <mat-icon class="profileimg">account_circle</mat-icon>
+              <span class="profileName" fxHide.xs fxHide.sm></span>
+          </div>
+          <div class="Cart" fxLayout="column" fxLayoutAlign="end center" fxLayout.xs="row" fxFlex.xs="50">
+              <mat-icon class="cartIcon" >contact_support</mat-icon>
+              <span class="cartName" fxHide.xs fxHide.sm>Support</span>
+          </div>
+      </mat-toolbar-row>
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
+
+</div>

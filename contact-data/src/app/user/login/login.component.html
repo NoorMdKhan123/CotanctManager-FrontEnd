@@ -1,0 +1,87 @@
+<!-- <mat-toolbar>
+  <span>Registration</span>
+</mat-toolbar>
+
+
+<mat-card>
+  <form [formGroup]="loginForm" (click)="OnSubmit">
+    <div>
+      <div>
+          <mat-label style="font-size: medium; font-weight: 500;">EmailId</mat-label>
+      </div>
+      <div style="font-size: 10px;">
+          <p>
+              <mat-form-field appearance="outline">
+                  <input matInput type="text" formControlName="email" placeholder="">
+                  <mat-error>Enter Email</mat-error>
+              </mat-form-field>
+          </p>
+      </div>
+  </div>
+  <div>
+    <div>
+        <mat-label style="font-size: medium; font-weight: 500;">Password</mat-label>
+    </div>
+    <div style="font-size: 10px;">
+        <p>
+            <mat-form-field appearance="outline">
+                <input matInput type="text" formControlName="password" placeholder="">
+                <mat-error>Enter Password</mat-error>
+            </mat-form-field>
+        </p>
+    </div>
+</div>
+<div style="margin-bottom: 20px; margin-top:20px;height:30%;"  fxLayoutAlign="center center">
+  <button  mat-flat-button (click)="OnSubmit()"
+      style="width: 80%;font-size:15px;margin-top: 10px; height:30%; margin-bottom:10px;background: brown; color: white;">Login</button>
+</div>
+  </form>
+</mat-card>
+
+ -->
+<div class="body-part">
+  <mat-card class="container" fxLayout.xs="column" fxLayout.sm="column" fxFlex.xs="95"  fxFlex.sm="60">
+    <div fxLayout="row" fxLaoutGap ="50%" fxLayoutAlign="center center" fxLayout.xs="row" fxLayout.sm="row" fxFlex.xs ="95"
+     fxFlex.xs="60" >
+       <div class="login" >
+         Login
+        </div>
+      <div class="signup" routerLink="/signup">
+        SignUp
+      </div>
+    </div>
+    <form [formGroup]="loginForm" (click)="OnSubmit">
+      <div>
+        <div>
+            <mat-label style="font-size: medium; font-weight: 500;">EmailId</mat-label>
+        </div>
+        <div style="font-size: 10px;">
+            <p>
+                <mat-form-field appearance="outline">
+                    <input matInput type="text" formControlName="email" placeholder="" style="font-size: 20px;">
+                    <mat-error>Enter Email</mat-error>
+                </mat-form-field>
+            </p>
+        </div>
+    </div>
+    <div>
+      <div>
+          <mat-label style="font-size: medium; font-weight: 500;">Password</mat-label>
+      </div>
+      <div style="font-size: 10px;">
+          <p>
+              <mat-form-field appearance="outline">
+                  <input matInput type="text" formControlName="password" placeholder="" style="font-size: 20px;">
+                  <mat-error>Enter Password</mat-error>
+              </mat-form-field>
+          </p>
+      </div>
+  </div>
+  <div style="margin-bottom: 20px; margin-top:20px;height:30%;"  fxLayoutAlign="center center">
+    <button  mat-flat-button (click)="OnSubmit()"
+        style="width: 80%;font-size:15px;margin-top: 10px; height:30%; margin-bottom:10px;background: brown; color: white;">Login</button>
+  </div>
+    </form>
+
+  </mat-card>
+</div>
